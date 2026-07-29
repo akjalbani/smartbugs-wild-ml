@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: "Weak-Supervision ML Pipeline for SmartBugs-Wild Vulnerability Detection"
+message: "If you use this software, please cite it and the SmartBugs dataset."
+type: software
+authors:
+  - given-names: "[Your first name]"
+    family-names: "[Your last name]"
+    affiliation: "[Your institution]"
+repository-code: "https://github.com/[your-username]/smartbugs-wild-ml"
+license: MIT
+references:
+  - type: article
+    title: "Empirical Review of Automated Analysis Tools on 47,587 Ethereum Smart Contracts"
+    authors:
+      - family-names: Durieux
+        given-names: Thomas
+      - family-names: Ferreira
+        given-names: "João F."
+      - family-names: Abreu
+        given-names: Rui
+      - family-names: Cruz
+        given-names: Pedro
+    collection-title: "ICSE 2020"
+    year: 2020
