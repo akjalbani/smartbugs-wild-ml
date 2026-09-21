@@ -1,0 +1,1 @@
+{"n": 8360, "res": {"RandomForest": {"micro_f1": 0.8738, "macro_f1": 0.71}, "SVM": {"micro_f1": 0.8026, "macro_f1": 0.5243}, "CNN": {"micro_f1": 0.5938, "macro_f1": 0.3812}, "GNN": {"micro_f1": 0.5632, "macro_f1": 0.3499}, "Ensemble": {"micro_f1": 0.8472, "macro_f1": 0.6995}}}

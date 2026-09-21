@@ -1,0 +1,379 @@
+{
+  "n_total": 44589,
+  "n_train": 31214,
+  "n_val": 4458,
+  "n_test": 8917,
+  "consensus_k": 2,
+  "results": {
+    "RandomForest": {
+      "micro_f1": 0.8822,
+      "macro_f1": 0.7326,
+      "micro_f1_ci95": [
+        0.8763,
+        0.8885
+      ],
+      "per_category": [
+        {
+          "category": "access_control",
+          "precision": 0.9157,
+          "recall": 0.5984,
+          "f1": 0.7238,
+          "support": 127
+        },
+        {
+          "category": "arithmetic",
+          "precision": 0.9222,
+          "recall": 0.9282,
+          "f1": 0.9252,
+          "support": 5377
+        },
+        {
+          "category": "denial_service",
+          "precision": 0.9522,
+          "recall": 0.6175,
+          "f1": 0.7492,
+          "support": 549
+        },
+        {
+          "category": "reentrancy",
+          "precision": 0.9599,
+          "recall": 0.7608,
+          "f1": 0.8488,
+          "support": 1037
+        },
+        {
+          "category": "unchecked_low_calls",
+          "precision": 0.9508,
+          "recall": 0.5395,
+          "f1": 0.6884,
+          "support": 215
+        },
+        {
+          "category": "front_running",
+          "precision": 0.5952,
+          "recall": 0.4854,
+          "f1": 0.5348,
+          "support": 206
+        },
+        {
+          "category": "time_manipulation",
+          "precision": 0.8876,
+          "recall": 0.5232,
+          "f1": 0.6583,
+          "support": 151
+        }
+      ]
+    },
+    "SVM": {
+      "micro_f1": 0.8095,
+      "macro_f1": 0.5395,
+      "micro_f1_ci95": [
+        0.8025,
+        0.817
+      ],
+      "per_category": [
+        {
+          "category": "access_control",
+          "precision": 0.8529,
+          "recall": 0.4567,
+          "f1": 0.5949,
+          "support": 127
+        },
+        {
+          "category": "arithmetic",
+          "precision": 0.8608,
+          "recall": 0.8938,
+          "f1": 0.877,
+          "support": 5377
+        },
+        {
+          "category": "denial_service",
+          "precision": 0.7115,
+          "recall": 0.4044,
+          "f1": 0.5157,
+          "support": 549
+        },
+        {
+          "category": "reentrancy",
+          "precision": 0.8044,
+          "recall": 0.7377,
+          "f1": 0.7696,
+          "support": 1037
+        },
+        {
+          "category": "unchecked_low_calls",
+          "precision": 0.6939,
+          "recall": 0.3163,
+          "f1": 0.4345,
+          "support": 215
+        },
+        {
+          "category": "front_running",
+          "precision": 0.5111,
+          "recall": 0.1117,
+          "f1": 0.1833,
+          "support": 206
+        },
+        {
+          "category": "time_manipulation",
+          "precision": 0.6164,
+          "recall": 0.298,
+          "f1": 0.4018,
+          "support": 151
+        }
+      ]
+    },
+    "CNN": {
+      "micro_f1": 0.6027,
+      "macro_f1": 0.3929,
+      "micro_f1_ci95": [
+        0.5955,
+        0.6108
+      ],
+      "per_category": [
+        {
+          "category": "access_control",
+          "precision": 0.1585,
+          "recall": 0.8661,
+          "f1": 0.268,
+          "support": 127
+        },
+        {
+          "category": "arithmetic",
+          "precision": 0.8066,
+          "recall": 0.9083,
+          "f1": 0.8544,
+          "support": 5377
+        },
+        {
+          "category": "denial_service",
+          "precision": 0.2624,
+          "recall": 0.8361,
+          "f1": 0.3995,
+          "support": 549
+        },
+        {
+          "category": "reentrancy",
+          "precision": 0.5623,
+          "recall": 0.8177,
+          "f1": 0.6664,
+          "support": 1037
+        },
+        {
+          "category": "unchecked_low_calls",
+          "precision": 0.1146,
+          "recall": 0.8558,
+          "f1": 0.2021,
+          "support": 215
+        },
+        {
+          "category": "front_running",
+          "precision": 0.1401,
+          "recall": 0.8107,
+          "f1": 0.2389,
+          "support": 206
+        },
+        {
+          "category": "time_manipulation",
+          "precision": 0.0649,
+          "recall": 0.8808,
+          "f1": 0.1209,
+          "support": 151
+        }
+      ]
+    },
+    "GNN": {
+      "micro_f1": 0.5728,
+      "macro_f1": 0.362,
+      "micro_f1_ci95": [
+        0.5651,
+        0.5815
+      ],
+      "per_category": [
+        {
+          "category": "access_control",
+          "precision": 0.0766,
+          "recall": 0.8976,
+          "f1": 0.1411,
+          "support": 127
+        },
+        {
+          "category": "arithmetic",
+          "precision": 0.7528,
+          "recall": 0.9436,
+          "f1": 0.8375,
+          "support": 5377
+        },
+        {
+          "category": "denial_service",
+          "precision": 0.3054,
+          "recall": 0.8707,
+          "f1": 0.4522,
+          "support": 549
+        },
+        {
+          "category": "reentrancy",
+          "precision": 0.3788,
+          "recall": 0.918,
+          "f1": 0.5363,
+          "support": 1037
+        },
+        {
+          "category": "unchecked_low_calls",
+          "precision": 0.1315,
+          "recall": 0.8791,
+          "f1": 0.2288,
+          "support": 215
+        },
+        {
+          "category": "front_running",
+          "precision": 0.0885,
+          "recall": 0.9272,
+          "f1": 0.1617,
+          "support": 206
+        },
+        {
+          "category": "time_manipulation",
+          "precision": 0.0982,
+          "recall": 0.8609,
+          "f1": 0.1763,
+          "support": 151
+        }
+      ]
+    },
+    "Ensemble": {
+      "micro_f1": 0.8547,
+      "macro_f1": 0.715,
+      "micro_f1_ci95": [
+        0.8486,
+        0.8612
+      ],
+      "per_category": [
+        {
+          "category": "access_control",
+          "precision": 0.6329,
+          "recall": 0.7874,
+          "f1": 0.7018,
+          "support": 127
+        },
+        {
+          "category": "arithmetic",
+          "precision": 0.8764,
+          "recall": 0.9336,
+          "f1": 0.9041,
+          "support": 5377
+        },
+        {
+          "category": "denial_service",
+          "precision": 0.7438,
+          "recall": 0.7614,
+          "f1": 0.7525,
+          "support": 549
+        },
+        {
+          "category": "reentrancy",
+          "precision": 0.8589,
+          "recall": 0.7985,
+          "f1": 0.8276,
+          "support": 1037
+        },
+        {
+          "category": "unchecked_low_calls",
+          "precision": 0.6077,
+          "recall": 0.7349,
+          "f1": 0.6653,
+          "support": 215
+        },
+        {
+          "category": "front_running",
+          "precision": 0.4467,
+          "recall": 0.6505,
+          "f1": 0.5296,
+          "support": 206
+        },
+        {
+          "category": "time_manipulation",
+          "precision": 0.5355,
+          "recall": 0.7483,
+          "f1": 0.6243,
+          "support": 151
+        }
+      ]
+    }
+  },
+  "mcnemar_pairwise": {
+    "RandomForest|SVM": {
+      "statistic": 562.8066,
+      "p_value": 0.0,
+      "b": 1584,
+      "c": 500
+    },
+    "CNN|RandomForest": {
+      "statistic": 5908.9228,
+      "p_value": 0.0,
+      "b": 794,
+      "c": 8006
+    },
+    "CNN|SVM": {
+      "statistic": 4205.7057,
+      "p_value": 0.0,
+      "b": 1399,
+      "c": 7527
+    },
+    "CNN|GNN": {
+      "statistic": 259.3375,
+      "p_value": 0.0,
+      "b": 6310,
+      "c": 4625
+    },
+    "CNN|Ensemble": {
+      "statistic": 5868.8525,
+      "p_value": 0.0,
+      "b": 437,
+      "c": 7080
+    },
+    "GNN|RandomForest": {
+      "statistic": 7336.4991,
+      "p_value": 0.0,
+      "b": 945,
+      "c": 9842
+    },
+    "GNN|SVM": {
+      "statistic": 5621.0135,
+      "p_value": 0.0,
+      "b": 1522,
+      "c": 9335
+    },
+    "Ensemble|RandomForest": {
+      "statistic": 203.0359,
+      "p_value": 0.0,
+      "b": 510,
+      "c": 1079
+    },
+    "Ensemble|SVM": {
+      "statistic": 148.3414,
+      "p_value": 0.0,
+      "b": 1148,
+      "c": 633
+    },
+    "Ensemble|GNN": {
+      "statistic": 7304.9862,
+      "p_value": 0.0,
+      "b": 8910,
+      "c": 582
+    }
+  },
+  "timing_s": {
+    "tfidf_s": 47.02512311935425,
+    "seq_s": 27.68919801712036,
+    "graph_s": 99.48265671730042,
+    "train_RandomForest": 1022.8958089351654,
+    "infer_RandomForest": 7.7034912109375,
+    "train_SVM": 57.77595829963684,
+    "infer_SVM": 0.1018669605255127,
+    "train_CNN": 683.6902606487274,
+    "infer_CNN": 10.307480335235596,
+    "train_GNN": 1438.016783952713,
+    "infer_GNN": 5.138136386871338
+  }
+}
